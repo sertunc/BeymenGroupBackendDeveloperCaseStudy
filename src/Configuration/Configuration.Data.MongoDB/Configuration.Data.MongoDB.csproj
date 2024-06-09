@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+		<PackageReference Include="MongoDB.Driver" Version="2.25.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Configuration.Common\Configuration.Common.csproj" />
+		<ProjectReference Include="..\Configuration.Data.Abstractions\Configuration.Data.Abstractions.csproj" />
+		<ProjectReference Include="..\Configuration.Data.Models\Configuration.Data.Models.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+version: '3.9'
+
+services:
+
+  configuration.webapi:
+    image: ${DOCKER_REGISTRY-}configuration-webapi
+    build:
+      context: .
+      dockerfile: src/Configuration/Configuration.WebApi/Dockerfile
+    ports:
+      - "5000:80"
+    volumes:
+      - ./src/Configuration/Configuration.WebApi/appsettings.Docker.json:/app/appsettings.json
+    networks:
+      - beymen_network
+    depends_on:
+      - mongodb
+
+  service-a:
+    image: ${DOCKER_REGISTRY-}service-a
+    build:
+      context: .
+      dockerfile: src/Services/SERVICE-A/Dockerfile
+    ports:
+      - "5010:80"
+    volumes:
+      - ./src/Services/SERVICE-A/appsettings.Docker.json:/app/appsettings.json
+    networks:
+      - beymen_network
+
+  service-b:
+    image: ${DOCKER_REGISTRY-}service-b
+    build:
+      context: .
+      dockerfile: src/Services/SERVICE-B/Dockerfile
+    ports:
+      - "5020:80"
+    volumes:
+      - ./src/Services/SERVICE-B/appsettings.Docker.json:/app/appsettings.json
+    networks:
+      - beymen_network
+
+  service-c:
+    image: ${DOCKER_REGISTRY-}service-c
+    build:
+      context: .
+      dockerfile: src/Services/SERVICE-C/Dockerfile
+    ports:
+      - "5030:80"
+    volumes:
+      - ./src/Services/SERVICE-C/appsettings.Docker.json:/app/appsettings.json
+    networks:
+      - beymen_network
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - beymen_network
+
+volumes:
+  mongodb_data:
+
+
+networks:
+  beymen_network:

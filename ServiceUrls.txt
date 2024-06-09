@@ -1,0 +1,6 @@
+Configuration.UI     			-> http://localhost:3000
+Configuration.WebApi			-> http://localhost:5000
+
+SERVICE-A						-> http://localhost:5010
+SERVICE-B						-> http://localhost:5020
+SERVICE-C						-> http://localhost:5030
