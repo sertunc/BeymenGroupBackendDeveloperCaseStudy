@@ -2,13 +2,13 @@
 
 Bu proje, web.config, app.config gibi dosyalarda tutulan appkey’lerin ortak ve dinamik bir yapıyla erişilebilir olmasını ve deployment veya restart, recycle gerektirmeden güncellenmelerini sağlar.
 
-![ConfigurationLibraryDaigram](https://github.com/sertunc/BeymenGroupBackendDeveloperCaseStudy/assets/6024003/584df8db-4629-45a5-995f-29d092cb3558)
+![ConfigurationLibraryDaigram](https://github.com/sertunc/BeymenGroupBackendDeveloperCaseStudy/assets/6024003/e15be2d5-f6d5-4889-bc2b-bde1802461ca)
 
-![ConfigurationLibraryScreenShot1](https://github.com/sertunc/BeymenGroupBackendDeveloperCaseStudy/assets/6024003/c0b351aa-d1c2-403e-8737-ee01d748d744)
+![ConfigurationLibraryScreenShot1](https://github.com/sertunc/BeymenGroupBackendDeveloperCaseStudy/assets/6024003/079a8a8e-94ae-40fb-9801-2ff2cd241870)
 
 ### Backend Servislerini Çalıştırma
 
-Backend servislerini ayağa kaldırmak için aşağıdaki adımları izleyin:
+Backend servislerini ayağa kaldırmak için:
 
 1. Proje root klasörüne gidin:
     ```bash
@@ -21,7 +21,7 @@ Backend servislerini ayağa kaldırmak için aşağıdaki adımları izleyin:
 
 ### UI Projesini Çalıştırma
 
-UI projesini başlatmak için şu adımları izleyin:
+UI projesini başlatmak için:
 
 1. UI projesinin bulunduğu dizine gidin:
     ```bash
